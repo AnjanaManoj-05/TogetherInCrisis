@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Blurred background applied as a pseudo-element */
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./v1.webp") no-repeat center center/cover;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.login-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(22, 50, 91, 0.8);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  color: white;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.login-button:hover {
+  transform: scale(1.1);
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  padding: 0 10%; /* Add padding for better responsiveness */
+}
+
+.title {
+  font-size: 4em;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.2;
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+  font-family: 'Roboto', sans-serif;
+  animation: titleAnimation 2s ease-out;
+}
+
+/* Title Animation */
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.highlight {
+  color: #6FDCE3;
+  font-weight: bold;
+}
+
+.decorative-line {
+  width: 60%; /* Wider for more emphasis */
+  height: 3px;
+  background-color: #6FDCE3;
+  border-radius: 1.5px;
+  margin: 20px 0 25px;
+  animation: lineAnimation 2s ease-out;
+}
+
+/* Line Animation */
+@keyframes lineAnimation {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 60%;
+    opacity: 1;
+  }
+}
+
+.button {
+  background-color: #4CC9FE;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+  background-color: #8FD14F;
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+/*Second page*/
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;600&display=swap');
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4A90E2 10%, #56CCF2 90%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  color: #333;
+}
+
+/* Main Container */
+.second-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);  /* Softer blur effect */
+  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  color: #fff;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.header-title {
+  font-size: 2em;
+  color: #fff;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif; /* Ensure the font is Poppins */
+  text-transform: none; /* Remove uppercase transformation */
+  letter-spacing: normal; /* Reset letter spacing */
+  text-shadow: none; /* Remove text shadow */
+}
+
+/* Vision and Mission Section */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+  color: #333;
+}
+
+.vision-mission {
+  position: relative;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+
+.vision-mission:hover {
+  transform: scale(1.02);
+}
+
+.vision-mission h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #6BBE44;
+  margin-bottom: 20px; /* Add space after heading */
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* Custom underline styling */
+.vision-mission h1 span {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px; /* Add space between the text and the underline */
+}
+
+.vision-mission h1 span::after {
+  content: '';
+  position: absolute;
+  left: -10%; /* Adjust to extend left */
+  bottom: 0;
+  width: 650px; /* Increase the width to make the underline longer */
+  height: 4px; /* Thicker underline */
+  background: linear-gradient(135deg, #6BBE44, #32CD32); /* Gradient effect */
+  border-radius: 2px;
+}
+.vision-mission p {
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.vision-mission p:hover {
+  color: #32CD32; /* Add hover effect on text */
+}
+
+/* Auth Section */
+.auth-section {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.auth-section.visible {
+  opacity: 1;
+}
+
+.sign-in-button, .sign-up-button {
+  background-color: #32CD32;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 40px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  width: 230px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sign-in-button:hover, .sign-up-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #28a745;
+}
+
+/* Centered Call-to-Action Text */
+.main-call-to-action {
+  font-size: 2.5em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-call-to-action span {
+  color: #32CD32;
+}
+
+.start-button {
+  background-color: #32CD32;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+}
+
+.start-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Scroll Prompt */
+.scroll-prompt {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  animation: scrollAnimation 1.5s infinite;
+}
+
+@keyframes scrollAnimation {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+  100% { transform: translateY(0); }
+}

@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TogetherInCrisis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="second-page-container">
+    <!-- Header Section -->
+    <div class="header">
+      <div class="header-logo">
+        <img src="TogetherInCrisisLogo.jpg" alt="Logo" class="logo-image">
+        <span class="header-title">TogetherInCrisis</span>
+      </div>
+    </div>
+    
+    <!-- Vision and Mission Section -->
+    <div class="main-content">
+      <div class="vision-mission">
+        <h1><span>Vision</span></h1>
+        <p>Our vision is to create a world where compassion and collaboration drive meaningful change, empowering individuals to come together and make a lasting impact on communities in need. We envision a future where every person, regardless of background or circumstance, has access to opportunities for growth, support, and development through the collective efforts of dedicated volunteers. By fostering a global culture of service and solidarity, we aim to break barriers, build bridges, and inspire hope for a better, more inclusive, and sustainable world.</p>
+        <h1><span>Mission</span></h1>
+        <p>Our mission is to provide a dynamic and accessible platform that connects passionate individuals with impactful volunteering opportunities that address the most pressing social, environmental, and cultural challenges of our time. We strive to empower volunteers by nurturing their skills, amplifying their voices, and supporting their efforts to uplift underserved communities. Through partnerships with grassroots organizations and collaborative initiatives, we aim to drive sustainable development, promote equity, and inspire a spirit of giving. By cultivating a network of committed change-makers, we seek to ignite lasting transformation and foster a sense of purpose and belonging for all involved. </p>
+      </div>
+    </div>
+    
+    <!-- Sign-In and Sign-Up Section -->
+    <div class="auth-section">
+      <button class="sign-in-button">Sign in</button>
+      <p>New user?</p>
+      <button class="sign-up-button">Sign up</button>
+    </div>
+  </div>
+
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+      window.addEventListener('scroll', function () {
+        const authSection = document.querySelector('.auth-section');
+        if (window.scrollY > 300) { 
+          authSection.classList.add('visible');
+        } else {
+          authSection.classList.remove('visible');
+        }
+      });
+    });
+  </script>  
+</body>
+</html>
+<script>
+    document.querySelector('.sign-in-button').addEventListener('click', function () {
+        window.location.href = 'http://localhost:5173/';
+    });
+</script>
+<script>
+    document.querySelector('.sign-up-button').addEventListener('click', function () {
+        window.location.href = 'http://localhost:5173/signup';
+    });
+</script>
+</body>
+</html>

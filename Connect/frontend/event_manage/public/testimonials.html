@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #b4d6f6 0%, #c5f1d0 100%); 
+}
+
+/* Header Styling */
+.header {
+    background-color: #ffffff;
+    color: #023a89;
+    display:flex;
+    
+}
+
+.logo {
+    display:flex;
+    justify-content:flex-start;
+    width: 100px;
+    margin-right:100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    
+    padding: 50px 0;
+    margin:50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: left;
+    
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #051958;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 50px;
+
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 0.9rem;
+    color: #7a7a7a;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.phone-number {
+    font-size: 1rem;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Makes icons white */
+    transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+    transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+
+    <!-- Header with Logo on the Right -->
+    <header class="header">
+        <div class="container">
+            <img src="TogetherInCrisisLogo.jpg" alt="Logo" class="logo">
+            <h1>TogetherInCrisis</h1>
+        </div>
+       
+    </header>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonials">
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+                    <img src="boy1.jpg" alt="Person 1">
+                    <h3>Michael</h3>
+                    <p>“The services provided were top-notch. Highly recommend to everyone!”</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+                    <img src="girl.jpg" alt="Person 2">
+                    <h3>Jessica</h3>
+                    <p>“A fantastic experience! Truly exceeded my expectations.”</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial">
+                    <img src="images.jpg" alt="Person 3">
+                    <h3>Steve</h3>
+                    <p>“Professional and efficient service from start to finish.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Phone Number and Social Media Links -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="phone-number">
+                Call Us: 9876543210
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="https://via.placeholder.com/24/3b5998?text=F" alt="Facebook"></a>
+                <a href="#"><img src="https://via.placeholder.com/24/1da1f2?text=T" alt="Twitter"></a>
+                <a href="#"><img src="https://via.placeholder.com/24/e1306c?text=I" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-container {
+    background: linear-gradient(135deg, #b4d6f6 0%, #c5f1d0 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .login-container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .login-container input {
+    width: 90%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-container a {
+    display: block;
+    margin: 10px 0;
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .login-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-container button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .login-container button:disabled {
+    background-color: #b0e2e6;
+    cursor: not-allowed;
+  }
+  
+  .login-container button:hover:not(:disabled) {
+    background-color: #008c9e;
+  }
+  
+  .highlight {
+    animation: highlight-btn 1s infinite alternate;
+    transform: scale(1.1);
+  }
+  
+  @keyframes highlight-btn {
+    from {
+      background-color: #008c9e;
+      transform: scale(1);
+    }
+    to {
+      background-color: #00e1ff;
+      transform: scale(1.05);
+    }
+  }
+  

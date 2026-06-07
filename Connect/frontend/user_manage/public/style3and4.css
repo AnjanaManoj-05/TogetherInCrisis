@@ -1,0 +1,233 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #b4d6f6 0%, #c5f1d0 100%);   
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #0f4c5c;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    gap: 200px;
+}
+
+.image-section img {
+    width:300px;
+    height: 300px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.text-section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-section h1 {
+    font-size: 3rem;
+    color: #0f4c5c;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 30px;
+    border: 2px solid #0f4c5c;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #0f4c5c;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #0f4c5c;
+    color: white;
+}
+
+
+
+/* fourthpage */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #b4d6f6 0%, #c5f1d0 100%);
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+    color: #5AC6D0;
+    /* margin-right: 2rem; */
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #5AC6D0;
+}
+
+
+
+.filter-bar {
+    padding: 1rem;
+    background-color: #0f4c5c;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    color:#d9f2fd;
+}
+
+.main-container {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.main-content {
+    flex: 3;
+}
+
+.sidebar {
+    max-height: 500px;
+    flex: 1;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.sidebar img {
+    max-width: 150px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* Opportunity Styling */
+.opportunity {
+    padding: 1rem;
+}
+
+.opportunity+.opportunity {
+    border-top: 1px solid #181717;
+}
+
+.opportunity a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #0f4c5c;
+    margin-bottom: 0.5rem;
+    font-weight: 75px;
+}
+
+.opportunity a:hover {
+    color: #e04b4b;
+}
+
+.opportunity p {
+    color: #666;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.opportunity .organization {
+    color: #003439;
+    margin-bottom: 0.5rem;
+}
+
+.opportunity .date-posted {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Help Button */
+.help-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #FF7E2F;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    padding:3rem;
+    background-color: #e7e6e6;
+    color: #0f4c5c;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer h2 {
+    font-weight: 5px;
+}

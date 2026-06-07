@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(135deg,rgb(194, 194, 253),rgb(192, 245, 192) 100%);
+    height:100vh;
+    margin: 10px 10px 10px 10px;
+}
+
+.container img{
+    width:"70px";
+    border-radius: 50px;
+}
+
+.event-section {
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.event-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-volunteering, .cause-area {
+   
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.about-volunteering h3, .cause-area h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #555;
+}
+
+.about-volunteering ul, .cause-area ul {
+    list-style: none;
+    line-height: 1.8;
+    color: #777;
+}
+
+.enroll-button {
+    display: block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.enroll-button:hover {
+    background-color:linear-gradient(135deg,#b4d6f6,#c5f1d0 100%);
+}
+
+/* Cause Area Section Styling */
+.cause-area {
+    background-color:white;
+    color: #333;
+}
+footer{
+    display:flex;
+    align-items:last baseline;
+   margin-bottom: 0;
+}

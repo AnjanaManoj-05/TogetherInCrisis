@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch API",
+        "skipFiles": ["<node_internals>/**"],
+        "program": "${workspaceFolder}/server.js",  // Entry point of your API (can be app.js, index.js, etc.)
+        "runtimeArgs": ["--inspect-brk"],  // Enables the debugging feature (you can add more args if necessary)
+        "env": {
+          "NODE_ENV": "development"  // You can add environment variables here if needed
+        },
+        "port": 9229  // The default port for the debugger
+      }
+    ]
+  }
+  
